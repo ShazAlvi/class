@@ -1,0 +1,10 @@
+#!/bin/bash
+#SBATCH -N 1
+#SBATCH -n 1
+#SBATCH --mem 250
+#SBATCH -p general
+#SBATCH -o out.out
+#SBATCH -e out.err
+#SBATCH -t 3-00:0 
+
+./class explanatory.ini

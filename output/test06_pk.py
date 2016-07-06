@@ -1,0 +1,18 @@
+import matplotlib.pyplot as plt
+import numpy as np
+import itertools
+
+files = ['/n/home12/rebecca.krall/class1/output/test06_pk.dat', '/n/home12/rebecca.krall/class1/output/explanatory22_pk.dat']
+data = []
+for data_file in files:
+    data.append(np.loadtxt(data_file))
+roots = ['test06_pk', 'explanatory22_pk']
+
+fig, ax = plt.subplots()
+y_axis = [u'P(Mpc/h)^3']
+tex_names = ['P (Mpc/h)^3']
+x_axis = 'k (h/Mpc)'
+ax.set_xlabel('k (h/Mpc)', fontsize=16)
+ax.set_xlim(xlim)
+ax.set_ylim()
+plt.show()
